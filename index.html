@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya Libre">
+    <title>Yuna's Personal Portfolio</title>
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- nav -->
+    <nav class="side-nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="nav-panel">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- home section -->
+        <section id="home" class="section full-screen" aria-labelledby="home-heading">
+            <div class="container">
+                <div class="home-content">
+                    <h1 id="home-heading">
+                        <span class="typewriter-container">
+                            <span id="typewriter-text"></span>
+                            <span id="typewriter-cursor">|</span>
+                        </span>
+                    </h1>
+
+                    <div class="scroll-indicator">
+                        <div class="scroll-arrow">↓</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <div class="about-content-row">
+                    <div class="about-text">
+                        <p>&nbsp;&nbsp;<span class="prompt">>></span> "My name is Yuna Miyoshi, and I am currently a sophomore at the University 
+                            of Michigan studying Computer Science."
+                        </p>
+                        <p>&nbsp;&nbsp;<span class="prompt">>></span> "I'm exploring the broad field of computer science and keeping an open mind 
+                            about potential career paths. I am excited to discover where my passions for problem-solving and technology will lead me!"
+                        </p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="images/yuna.jpeg" alt="Portrait of Yuna">
+                    </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>My Skills:</h3>
+                    <ul class="skills-list" aria-label="List of skills">
+                        <li><span class="star">★</span> C++</li>
+                        <li><span class="star">★</span> Python</li>
+                        <li><span class="star">★</span> Lua</li>
+                        <li><span class="star">★</span> HTML/CSS</li>
+                        <li><span class="star">★</span> JavaScript</li>
+                        <li><span class="star">★</span> Web Accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="interests-gallery">
+                    <h3>Some things I love: </h3>
+                    <div class="interest-items">
+                        <div class="interest-item" data-interest="music">
+                            <img src="images/music.png" alt="music" width="80" height="80">
+                            <span>Music</span>
+                        </div>
+                        <div class="interest-item" data-interest="baking">
+                            <img src="images/baking.png" alt="baking" width="80" height="80">
+                            <span>Cooking/Baking</span>
+                        </div>
+                        <div class="interest-item" data-interest="nintendo">
+                            <img src="images/Wii.webp" alt="nintendo gaming" width="80" height="80">
+                            <span>Nintendo Games</span>
+                        </div>
+                        <div class="interest-item" data-interest="may">
+                            <img src="images/may.png" alt="may, yuna's dog" width="80" height="80">
+                            <span>May (my dog)</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- projects section -->
+        <section id="projects" class="section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project1-card" aria-labelledby="project1-heading">
+                        <div class="project1-image">
+                            <img src="images/TrollEscalatorTower.webp" alt="Screenshot of Project 2" width="300" height="200">
+                        </div>
+                        <div class="project1-content">
+                            <h3 id="project1-heading">Troll Escalator Tower</h3>
+                            <p>This is a Roblox Experience I created during my internship at moze Inc. in Japan. I was in charge of the stage design and 
+                                implemented the tags to create the escalator effect on the blocks using Lua. <br><br>
+                                Seeing real reactions from players all over the world to something I built was incredibly exciting—especially watching 
+                                it grow from 500,000 visits in the first week to over 19.3 million!</p>
+                            <div class="project-links">
+                                <a href="https://www.roblox.com/share?code=b7a3050841abe540bce9bf91883c792a&type=ExperienceDetails&stamp=1763915613511" target="_blank" aria-label="View the Roblox page for Troll Escalator Tower">Roblox page</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project2-card" aria-labelledby="project2-heading">
+                        <div class="project2-content">
+                            <h3 id="project2-heading">This Website!</h3>
+                            <p>I built this responsive portfolio from scratch to showcase my work and experiment with new JavaScript features 
+                                like dynamic typewriting effects and interactive elements. <br><br>
+                                With accessibilty in mind, I adhered to W3C's WCAG standards and validated with 
+                                automated testing tools like WAVE and axe to create an inclusive experience for all users.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Thank you for checking out my page! <br>
+                            Please feel free to reach out if you're looking for a developer, have a question, or just want to talk!</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/yunamiyo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                                <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
+                            </a>
+                            <a href="https://github.com/ymiyoshi5" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                                <img src="images/github.png" alt="GitHub" class="github" width="40" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" aria-labelledby="contact-form-heading" action="https://formspree.io/f/xankgobv" method="POST">
+                        <h3 id="contact-form-heading">Or... send me a message :)</h3>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Yuna Miyoshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
