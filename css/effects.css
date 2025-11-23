@@ -1,7 +1,7 @@
 /* Typewriter effect */
 .typewriter-container {
     display: inline-flex;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Abhaya Libre', 'Georgia', serif;
 }
 
 #typewriter-cursor {

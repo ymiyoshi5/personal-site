@@ -5,6 +5,15 @@ html {
     /* For Internet Explorer and Edge */
     -ms-overflow-style: none;
     scroll-behavior: smooth;
+    scroll-timeline: auto;
+}
+
+_::-webkit-full-page-media, _:future, :root {
+    scroll-behavior: smooth;
+}
+
+_::-webkit-full-page-media, _:future, :root .typewriter-container {
+    font-family: Georgia, serif;
 }
 
 /* chrome, safari, opera, etc. */
