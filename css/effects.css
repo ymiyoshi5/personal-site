@@ -37,49 +37,6 @@
     }
 }
 
-/* Interests hover */
-.interest-item:hover {
-    transform: scale(1.1);
-}
-
-.interest-item img {
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid lightblue;
-    transition: border-color 0.3s ease;
-    display: block;
-    margin: 0 auto;
-}
-
-.interest-item:hover img {
-    border-color: pink;
-}
-
-.interest-item span {
-    display: block;
-    margin-top: 8px;
-    font-weight: 500;
-}
-
-/* Floating images */
-.floating-interest {
-    position: fixed;
-    z-index: 1000;
-    pointer-events: none;
-    animation: fallDown 3s linear forwards;
-}
-
-@keyframes fallDown {
-    0% {
-        transform: translateY(-100px) translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) translateX(0) rotate(360deg);
-        opacity: 0;
-    }
-}
-
 /* Back-to-top Button */
 .back-to-top {
     position: fixed;
