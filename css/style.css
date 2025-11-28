@@ -62,7 +62,6 @@ body {
 
 .about-image {
     order: -1;
-    margin: 10%;
 }
 
 #about-heading, .about-image img, .about-text {
@@ -74,7 +73,7 @@ body {
     max-width: 400px;
     border-radius: 20px;
     display: block;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
 .about-text {
