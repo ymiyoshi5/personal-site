@@ -248,6 +248,19 @@ body {
     justify-items: center;
 }
 
+.interest-item img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid lightblue;
+    transition: border-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.interest-item:hover img {
+    border-color: pink;
+}
+
 .interest-item {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -350,19 +363,6 @@ div.social-links a {
     /* Interests hover */
     .interest-item:hover {
         transform: scale(1.1);
-    }
-
-    .interest-item img {
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid lightblue;
-        transition: border-color 0.3s ease;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .interest-item:hover img {
-        border-color: pink;
     }
 
     .interest-item span {
