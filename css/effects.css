@@ -66,6 +66,25 @@
     transform: translateY(-2px);
 }
 
+/* Floating images */
+    .floating-interest {
+        position: fixed;
+        z-index: 1000;
+        pointer-events: none;
+        animation: fallDown 3s linear forwards;
+    }
+
+    @keyframes fallDown {
+        0% {
+            transform: translateY(-100px) translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) translateX(0) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
 /* Dark Mode Button */
 .theme-toggle {
     position: fixed;
