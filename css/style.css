@@ -266,6 +266,12 @@ body {
     text-align: center;
 }
 
+.interest-item span {
+    display: block;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
 /* SOCIAL LINKS */
 .social-links {
     display: flex;
@@ -362,12 +368,6 @@ div.social-links a {
     /* Interests hover */
     .interest-item:hover {
         transform: scale(1.1);
-    }
-
-    .interest-item span {
-        display: block;
-        margin-top: 8px;
-        font-weight: 500;
     }
 
     .project1-card:hover,
