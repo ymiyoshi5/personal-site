@@ -33,6 +33,10 @@ body {
     outline-offset: 4px;
 }
 
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
 /* sections and layout */
 .section {
     scroll-margin-top: 80px;
