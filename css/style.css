@@ -33,6 +33,10 @@ body {
     scroll-margin-top: 80px;
 }
 
+.container {
+    padding: 0 20px;
+}
+
 .home-content {
     min-height: 100vh;
     display: flex;
@@ -43,7 +47,7 @@ body {
 }
 
 #projects, #contact {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-right: 20px;
 }
 
@@ -69,7 +73,7 @@ body {
 }
 
 .about-image img {
-    width: 100%;
+    width: 95%;
     max-width: 400px;
     border-radius: 20px;
     display: block;
@@ -313,12 +317,12 @@ div.social-links a {
 
     #about-heading, .about-text {
         text-align: left;
-        margin-left: 5%;
+        /* margin-left: 5%; */
     }
 
     .about-image img {
         text-align: center;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         max-width: 600px;
     }
 }
