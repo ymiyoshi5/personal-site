@@ -32,7 +32,7 @@ body {
     outline: none;
 }
 
-*:focus-visible {
+*:focus:not(:active) {
     outline: 3px solid #4a9eff;
     outline-offset: 3px;
 }
