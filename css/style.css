@@ -29,8 +29,12 @@ body {
 }
 
 *:focus {
+    outline: none;
+}
+
+*:focus-visible {
     outline: 3px solid #4a9eff;
-    outline-offset: 4px;
+    outline-offset: 3px;
 }
 
 *:focus:not(:focus-visible) {
