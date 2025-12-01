@@ -28,6 +28,11 @@ body {
     width: 100%;
 }
 
+*:focus {
+    outline: 3px solid #4a9eff;
+    outline-offset: 4px;
+}
+
 /* sections and layout */
 .section {
     scroll-margin-top: 80px;

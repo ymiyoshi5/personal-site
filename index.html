@@ -15,6 +15,7 @@
     <title>Yuna's Personal Portfolio</title>
 </head>
 <body>
+
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
     <!-- nav -->
@@ -32,7 +33,7 @@
 
     <main id="main-content">
         <!-- home section -->
-        <section id="home" class="section full-screen" aria-labelledby="home-heading">
+        <section id="home" class="section full-screen" aria-labelledby="home-heading" tabindex="0">
             <div class="container">
                 <div class="home-content">
                     <h1 id="home-heading">
@@ -52,9 +53,13 @@
         <!-- about section -->
         <section id="about" class="section" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="about-heading">About Me</h2>
+                <h2 id="about-heading" tabindex="0">About Me</h2>
                 <div class="about-content-row">
-                    <div class="about-text">
+                    <div class="about-image" tabindex="0">
+                        <img src="images/yuna.jpeg" alt="Portrait of Yuna">
+                    </div>
+
+                    <div class="about-text" tabindex="0">
                         <p>&nbsp;&nbsp;<span class="prompt">>></span> "My name is Yuna Miyoshi, and I am currently a sophomore at the University 
                             of Michigan studying Computer Science."
                         </p>
@@ -62,13 +67,10 @@
                             about potential career paths. I am excited to discover where my passions for problem-solving and technology will lead me!"
                         </p>
                     </div>
-                    
-                    <div class="about-image">
-                        <img src="images/yuna.jpeg" alt="Portrait of Yuna">
-                    </div>
+                
                 </div>
                 
-                <div class="skills-section">
+                <div class="skills-section" tabindex="0">
                     <h3>My Skills:</h3>
                     <ul class="skills-list" aria-label="List of skills">
                         <li><span class="star">★</span> C++</li>
@@ -80,9 +82,9 @@
                     </ul>
                 </div>
 
-                <div class="interests-gallery">
+                <div class="interests-gallery" tabindex="0">
                     <h3>Some things I love: </h3>
-                    <div class="interest-items">
+                    <div class="interest-items" tabindex="0">
                         <div class="interest-item" data-interest="music">
                             <img src="images/music.png" alt="music" width="80" height="80">
                             <span>Music</span>
@@ -105,12 +107,12 @@
         </section>
 
         <!-- projects section -->
-        <section id="projects" class="section" aria-labelledby="projects-heading">
+        <section id="projects" class="section" aria-labelledby="projects-heading" tabindex="0">
             <div class="container">
                 <h2 id="projects-heading">My Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <article class="project1-card" aria-labelledby="project1-heading">
+                    <article class="project1-card" aria-labelledby="project1-heading" tabindex="0">
                         <div class="project1-image">
                             <img src="images/TrollEscalatorTower.webp" alt="Screenshot of Project 2" width="300" height="200">
                         </div>
@@ -127,7 +129,7 @@
                     </article>
 
                     <!-- Project 2 -->
-                    <article class="project2-card" aria-labelledby="project2-heading">
+                    <article class="project2-card" aria-labelledby="project2-heading" tabindex="0">
                         <div class="project2-content">
                             <h3 id="project2-heading">This Website!</h3>
                             <p>I built this responsive portfolio from scratch to showcase my work and experiment with new JavaScript features 
@@ -141,7 +143,7 @@
         </section>
 
         <!-- contact section -->
-        <section id="contact" class="section" aria-labelledby="contact-heading">
+        <section id="contact" class="section" aria-labelledby="contact-heading" tabindex="0">
             <div class="container">
                 <h2 id="contact-heading">Get In Touch</h2>
                 <div class="contact-content">
