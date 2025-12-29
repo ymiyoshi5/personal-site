@@ -132,22 +132,31 @@ backToTopButton.addEventListener('click', () => {
 });
 
 // Dark mode
+document.body.classList.add('dark-mode');
+localStorage.setItem('theme', 'dark');
+
+// Create toggle button
 const themeToggle = document.createElement('button');
-themeToggle.textContent = '🌙';
+themeToggle.textContent = '☀️';
 themeToggle.className = 'theme-toggle';
 document.body.appendChild(themeToggle);
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-    themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    // Save preference to local storage
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    
+    if (document.body.classList.contains('dark-mode')) {
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    }
 });
 
-// check for saved theme on load
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-    themeToggle.textContent = '☀️';
+// Check if user previously chose light mode
+if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.remove('dark-mode');
+    themeToggle.textContent = '🌙';
 }
 
 // initialization

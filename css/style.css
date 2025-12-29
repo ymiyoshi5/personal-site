@@ -28,19 +28,6 @@ body {
     width: 100%;
 }
 
-*:focus {
-    outline: none;
-}
-
-*:focus:not(:active) {
-    outline: 3px solid #4a9eff;
-    outline-offset: 3px;
-}
-
-*:focus:not(:focus-visible) {
-    outline: none;
-}
-
 /* sections and layout */
 .section {
     scroll-margin-top: 80px;
@@ -317,9 +304,8 @@ div.social-links a {
     .interest-items {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: none;
-        gap: 10px;
+        gap: 0px;
         max-width: 100%;
-        width: 100%;
         justify-items: center;
     }
 
