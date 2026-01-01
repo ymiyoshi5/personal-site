@@ -132,6 +132,11 @@ body {
     transform-origin: center;
 }
 
+.project1-image video {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .project2-image img {
     border-radius: 10px;
 }
