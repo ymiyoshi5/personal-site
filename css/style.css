@@ -121,7 +121,7 @@ body {
 }
 
 /* PROJECTS */
-.project1-card, .project2-card {
+.project1-card, .project2-card, .project3-card {
     background: rgb(255, 227, 232);
     padding: 10px;
     border: 10px groove pink;
@@ -132,11 +132,11 @@ body {
     transform-origin: center;
 }
 
-.project1-image img {
+.project2-image img {
     border-radius: 10px;
 }
 
-#project2-heading {
+#project3-heading {
     margin-top: 0;
 }
 
@@ -351,12 +351,14 @@ div.social-links a {
     }
 
     #project1-heading,
-    #project2-heading {
+    #project2-heading,
+    #project3-heading {
         font-size: 20px;
     }
 
     .project1-content p,
     .project2-content p,
+    .project3-content p,
     .contact-info p {
         font-size: 17px;
     }
@@ -374,7 +376,8 @@ div.social-links a {
     }
 
     .project1-card:hover,
-    .project2-card:hover {
+    .project2-card:hover,
+    .project3-card:hover {
         transform: translateY(-2px) scale(1.03);
     }
 }
@@ -416,7 +419,8 @@ div.social-links a {
     }
 
     .project1-card:hover,
-    .project2-card:hover {
+    .project2-card:hover,
+    .project3-card:hover {
         transform: none;
         transition: none;
     }
